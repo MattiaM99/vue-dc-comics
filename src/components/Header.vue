@@ -48,28 +48,31 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+@import "../assets/style/vars.scss";
+
   .header{
     height: 200px;
   }
 
   a{
-    color: rgba(0, 0, 0, .5)
+    color: $nav-font-col
   }
 
   .nav-link{
-    color: rgba(0, 0, 0, .5) !important;
+    color: $nav-font-col !important;
     font-weight: bold;
     padding: 0 15px !important;
   }
 
   .nav-link:hover{
-    color: #0282F9 !important;
+    color: $link-color !important;
   }
 
   .active{
-    color: #0282F9 !important;
-    border-bottom: 3px solid #0282F9;
+    color: $link-color !important;
+    border-bottom: 3px solid $link-color;
   }
 
 </style>
