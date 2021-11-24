@@ -1,25 +1,25 @@
 <template>
   <div id="app">
     <Header/>
-    <Main/>
+    <!-- <Main/>
     <Merch/>
-    <Footer/>
+    <Footer/> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import Merch from './components/Merch.vue'
-import Footer from './components/Footer.vue'
+// import Main from './components/Main.vue'
+// import Merch from './components/Merch.vue'
+// import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
    Header,
-   Main,
-   Merch,
-   Footer
+  //  Main,
+  //  Merch,
+  //  Footer
   }
 }
 </script>
