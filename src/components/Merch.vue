@@ -8,19 +8,19 @@
         </li>
         <li>
           <img src="../assets/img/buy-comics-merchandise.png" alt="">
-          <a href="">DIGITAL COMICS</a>
+          <a href="">DC MERCHANDISE</a>
         </li>
         <li>
           <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-          <a href="">DIGITAL COMICS</a>
+          <a href="">SUBSCRIPTION</a>
         </li>
         <li>
           <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-          <a href="">DIGITAL COMICS</a>
+          <a href="">COMIC SHOP LOCATOR</a>
         </li>
         <li>
           <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-          <a href="">DIGITAL COMICS</a>
+          <a href="">DC POWER VISA</a>
         </li>
       </ul>  
     </div>
@@ -43,7 +43,7 @@ export default {
   li{
     display: inline;
     list-style: none;
-    margin: 0 29px;
+    margin: 0 20px;
     img{
       width: 70px;
     }
