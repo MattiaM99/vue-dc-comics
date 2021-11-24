@@ -67,12 +67,12 @@ export default {
   }
 
   .nav-link:hover{
-    color: $link-color !important;
+    color: $primary-color !important;
   }
 
   .active{
-    color: $link-color !important;
-    border-bottom: 3px solid $link-color;
+    color: $primary-color !important;
+    border-bottom: 3px solid $primary-color;
   }
 
 </style>
