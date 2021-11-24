@@ -56,9 +56,19 @@
         <img src="../assets/img/dc-logo-bg.png" alt="">
       </div>
     </div>
-    <div class="footer-bottom">
-
-    </div>
+   <div class="footer-bottom d-flex align-items-center">
+      <div class="container d-flex justify-content-between align-items-center">
+        <button class="btn-foot">SIGN-UP NOW!</button>
+        <div class="footer-bottom-right d-flex justify-content-between align-items-center">
+          <h3>FOLLOW US</h3>
+          <img src="../assets/img/footer-facebook.png" alt="">
+          <img src="../assets/img/footer-twitter.png" alt="">
+          <img src="../assets/img/footer-youtube.png" alt="">
+          <img src="../assets/img/footer-pinterest.png" alt="">
+          <img src="../assets/img/footer-periscope.png" alt="">
+        </div>
+      </div>
+   </div>
   </footer>
 </template>
 
@@ -94,6 +104,12 @@ export default {
     z-index: 100;
     height: 150px;
     background-color:#303030;
+    a{
+      color: $primary-color;
+    }
+    img{
+      margin-left: 20px;
+    }
   }
   h3{
     color: white;
@@ -105,6 +121,16 @@ export default {
     a{
       text-decoration: none;
       color: grey;
+    }
+  }
+  .btn-foot{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px 20px;
+    border: 2px solid $primary-color;
+    color: white;
+    font-size: 25px;  
+    &:hover{
+      color: rgba(255, 255, 255, .5);
     }
   }
 </style>

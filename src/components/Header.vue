@@ -64,10 +64,9 @@ export default {
     color: $nav-font-col !important;
     font-weight: bold;
     padding: 0 15px !important;
-  }
-
-  .nav-link:hover{
+  &:hover{
     color: $primary-color !important;
+  }
   }
 
   .active{
