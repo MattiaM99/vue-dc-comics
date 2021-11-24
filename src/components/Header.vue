@@ -6,36 +6,11 @@
       </a>
       <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">CHARACTERS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">COMICS</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">MOVIES</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">TV</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">GAMES</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">COLLECTIBLES</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">VIDEOS</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">FANS</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">NEWS</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">SHOP</a>
-          </li>   
+          <li v-for="(link, index) in links" 
+          :key="`ciclo-nav${index}`"
+          :class="{active : (index === counter)}" class="nav-item">
+            <a class="nav-link" href="#">{{link.name}}</a>
+          </li>  
         </ul>
       </div>
     </div>
@@ -44,8 +19,67 @@
 
 <script>
 export default {
- name: "Header"
+ name: "Header",
+
+  data(){
+    return{
+      links:[
+        {
+          url: "/characters",
+          name: "characters",
+          active: false,
+        },
+        {
+          url: "/comic",
+          name: "comic",
+          active: false,
+        },
+        {
+          url: "/movies",
+          name: "movies",
+          active: false,
+        },
+        {
+          url: "/tv",
+          name: "tv",
+          active: false,
+        },
+        {
+          url: "/games",
+          name: "games",
+          active: false,
+        },
+        {
+          url: "/collectibles",
+          name: "collectibles",
+          active: false,
+        },
+        {
+          url: "/videos",
+          name: "videos",
+          active: false,
+        },
+        {
+          url: "/fans",
+          name: "fans",
+          active: false,
+        },
+        {
+          url: "/news",
+          name: "news",
+          active: false,
+        },
+        {
+          url: "/shop",
+          name: "shop",
+          active: false,
+        },
+      ],
+      counter: 1,
+    }
+  }
 }
+
 </script>
 
 <style scoped lang="scss">
